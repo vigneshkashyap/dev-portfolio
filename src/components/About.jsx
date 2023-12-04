@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import Header from './Header';
@@ -56,7 +57,7 @@ function About(props) {
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                    <Image src={data?.imageSource} alt="profile" roundedCircle />
                   </Col>
                 </Row>
               </Fade>
